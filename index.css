@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color:antiquewhite;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content:space-between;
+}
+
+.header h1 a{
+    margin: 0;
+    padding: 0;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #189A46;
+
+}
+
+.header nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation a {
+    margin-left: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.header .navigation a:hover {
+    color:#189A46;
+}
+
+.header .navigation a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s linear;
+}
+
+.header .navigation  a:hover::after {
+    background-color: #189A46;
+    width: 100%;
+}
+
+.header .dropdown-blog.dropdown-toggle::after {
+    position: absolute;
+    left: 34px;
+}
